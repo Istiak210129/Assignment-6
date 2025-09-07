@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- navbar section -->
@@ -14,13 +17,13 @@
     <div class="navbar bg-base-100 shadow-sm bg-[#15803D]">
   <div class="navbar-start">
     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+      <div tabindex="0" role="button"  class="btn btn-ghost lg:hidden text-white font-bold">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
 
       </div>
       <ul
         tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-yellow-300 text-[#15803D]">
         <li><a>About</a></li>
         <li><a>Gallery</a> </li>
         <li><a>Plant a Tree</a></li>
@@ -39,6 +42,19 @@
     <a class="btn bg-[#FACC15] rounded-3xl text-[#15803D] border-none">Plant a tree</a>
   </div>
 </div>
+
+<!-- banner section -->
+
+ <section class="banner bg-[#CFF0DC] p-8 w-full bg-no-repeat 
+ md:bg-[url('/assets/hero-leaf1.png'),url('/assets/hero-leaf2.png')] hidden:bg-[url('/assets/hero-leaf1.png'),url('/assets/hero-leaf2.png')]
+     md:[background-position:left_top,right_top] md:bg-contain ">
+    <div class="content md:w-[35em] mx-auto text-center p-4 w-[22em] ">
+        <h1 class="font-bold text-2xl">Plant a Tree, Grow a Future</h1>
+        <p class="my-3 text-gray-600">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+         <a class="btn bg-[#FACC15] rounded-3xl text-[#15803D] border-none">Plant a tree</a>
+    </div>
+     
+ </section>
 
     <script src="./script.js"></script>
 </body>
