@@ -127,7 +127,7 @@ let displayCat = (id) =>{
         <div class="plants-card shadow-xl rounded-md p-4  h-full  ">
           <img src="${plant.image}"  class="w-full h-[15em]  rounded-md bg-contain" alt="">
           <h1 onclick="loadDetail(${plant.id})"  class=" btn border-none font-bold my-2">${plant.name}</h1>
-          <p class="text-gray-500 h-[10em] overflow-auto my-4">${plant.description}</p>
+          <p class="text-gray-500 h-[10em] overflow-clip my-4">${plant.description}</p>
           <div class="flex justify-between items-center my-4" >
             <button class="btn bg-[#CFF0DC] rounded-xl text-[#15803D]">${plant.category}</button>
             <p class="font-semibold"> ৳${plant.price}</p>
